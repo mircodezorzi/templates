@@ -1,0 +1,7 @@
+[
+  {
+    "directory": ".",
+    "command": "g++  -c src/main.cpp -Iinclude -o bin/main.o",
+    "file": "bin/main.o"
+  }
+]
