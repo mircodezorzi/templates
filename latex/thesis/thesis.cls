@@ -79,14 +79,27 @@
 \newcommand{\affil}[1]{\def\@affil{#1}}
 \newcommand{\email}[1]{\def\@email{#1}}
 
-\renewcommand{\@maketitle}{
-	\vskip10pt {\raggedright\baselineskip=24pt\huge\bfseries\@title\par}
-	\vskip10pt {\raggedright\textsc{\@author}\@ifundefined{@email}{}{\hfill\texttt{\@email}}\par}
-	\vskip8pt  {\raggedright\@affil\par}
-	\vskip8pt  {\raggedright\@ifundefined{@dates}{}{\normalfont\fontsize{8}{8}\selectfont\@dates}\par}
-	\vskip25pt
+\newcommand{\maketitle}{
+  \begin{titlepage}
+    \centering
+    \includegraphics[width=0.25\textwidth]{PNIT0003_logo-03}\par\vspace{1cm}
+    {\scshape\LARGE Columbidae University \par}
+    \vspace{1cm}
+    {\scshape\Large Final year project\par}
+    \vspace{1.5cm}
+    {\huge\bfseries \@title \par}
+    \vspace{2cm}
+    {\Large\itshape\@author\par}
+    \vfill
+    supervised by\par
+    Dr.~Mark \textsc{Brown}
+    \vfill
+    {\large \today\par}
+  \end{titlepage}
 }
 
 \newcommand{\maketoc}{
+	\onecolumn%
 	\tableofcontents%
+	\twocolumn%
 }

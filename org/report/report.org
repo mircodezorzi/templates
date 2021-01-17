@@ -1,0 +1,8 @@
+#+TITLE: Paper Title
+#+LATEX_CLASS: report
+#+LATEX_HEADER: \author{Author^$\dagger$}
+#+LATEX_HEADER: \affil{Institute^$\dagger$}
+#+LATEX_HEADER: \email{Email}
+#+LATEX_HEADER: \dates{This manuscript was compiled on \today}
+
+#+OPTIONS: toc:nil

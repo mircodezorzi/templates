@@ -1,4 +1,4 @@
-\documentclass{report}%
+\documentclass{thesis}%
 
 \title{Paper Title}
 \author{Author^$\dagger$}
@@ -17,15 +17,18 @@
 \begin{document}
 
 \maketitle%
+\maketoc%
 
 \begin{abstract}
   \blindtext%
 \end{abstract}
 
-\section{Foobar}
+\section{Foo}
 
 \lettrine{H}{ello}
 \Blindtext%
+
+\subsection{Grahps}
 
 \begin{tikzpicture}
   \begin{axis}
@@ -48,6 +51,13 @@
   \end{axis}
 \end{tikzpicture}
 
+\section{Bar}
+
+\Blindtext%
+
+\subsection{Code Snippets}
+
+\Blindtext%
 \blindtext%
 
 \begin{strip}
@@ -61,6 +71,12 @@
 \end{strip}
 
 \Blindtext%
+\Blindtext%
+
+\subsection{Algorithms}
+
+\Blindtext%
+\blindtext%
 
 \begin{algorithm*}
   \caption{Euclid’s algorithm}\label{euclid}
@@ -77,6 +93,9 @@
   \end{algorithmic}
 \end{algorithm*}
 
+\section{Baz}
+
+\Blindtext%
 \Blindtext%
 
 \end{document}
