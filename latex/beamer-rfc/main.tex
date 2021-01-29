@@ -1,0 +1,60 @@
+\documentclass{beamer}
+
+\usepackage{titling}
+\usepackage{multicol}
+\usepackage{graphicx}
+
+\usepackage{inconsolata}
+\renewcommand{\familydefault}{\ttdefault}
+
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+\author{M. De Zorzi}
+\date{\today}
+\institution{}
+\title{Presentation Title}
+
+\setbeamertemplate{itemize items}{+}
+\setbeamerfont{frametitle}{size=\bf}
+
+\defbeamertemplate*{title page}{}{
+	\begin{multicols}{2}
+		\begin{flushleft}
+			Network Working Group \\
+			Request for Comments: 2795 \\
+			Updates: 42
+		\end{flushleft}
+		\columnbreak%
+		\begin{flushright}
+			\theauthor% \\
+			J.F.Kennedy \\
+			\thedate%
+		\end{flushright}
+	\end{multicols}
+	\begin{center}
+		\vskip8pt%
+		\textbf{\thetitle}\\
+	\end{center}
+	\vfill
+}
+
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{footline}{
+	\hfill
+	\begin{minipage}[t]{0.5\paperwidth}
+		\begin{beamercolorbox}[wd=1.2cm, ht = 1cm]{}
+			\ifnum\thepage>1\relax%
+				[Page \insertpagenumber]\vskip2pt%
+				\hfill
+			\fi
+		\end{beamercolorbox}
+	\end{minipage}
+}
+
+\begin{document}
+\frame{
+	\titlepage%
+}
+\end{document}
