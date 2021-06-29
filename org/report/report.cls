@@ -1,1 +1,0 @@
-../../latex/report/report.cls
